@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    background-color: #25D366;
+}
+
+.btn-danger {
+    background: #ff2f5b;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #25D366;
+}
+
+.big-bold-text {
+    font-size: 20px;
+    /* adjust size as you like */
+    font-weight: bold;
+}
+
+#slider-section {
+    margin-top: 0;
+}
+
+#slider-section .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    /* transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+#slider-section .carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#slider-section .carousel-caption p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    #slider-section .carousel-caption {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    #slider-section .carousel-caption h2 {
+        font-size: 1.8rem;
+    }
+
+    #slider-section .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+.carousel-item img {
+    transition: transform 0.8s ease;
+    animation: zoomEffect 5s infinite;
+}
+
+@keyframes zoomEffect {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.carousel-item.active img {
+    transform: scale(1.05);
+}
+
+.carousel-caption .btn {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.carousel-item.active .carousel-caption .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carousel-caption .btn:hover {
+    transform: scale(1.1);
+}
+
+/* Slide text animation */
+.carousel-caption h2,
+.carousel-caption p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.carousel-item.active .carousel-caption h2,
+.carousel-item.active .carousel-caption p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Full overlay covering the image */
+/* Full overlay covering the entire slide */
+.overlay-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    /* force full width */
+    height: 100% !important;
+    /* full height */
+    background: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* vertical center */
+    align-items: center;
+    /* horizontal center */
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Text styling */
+.overlay-caption h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.overlay-caption p {
+    font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .overlay-caption h2 {
+        font-size: 2rem;
+    }
+
+    .overlay-caption p {
+        font-size: 1rem;
+    }
+}
+
+.about-section {
+    /* background: linear-gradient(to right, #25D366, #25D366); */
+    color: black;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.about-section .btn-primary {
+    background-color: #FF6464;
+    border: none;
+    cursor: pointer;
+    padding: 8px 20px;
+    font-weight: 900;
+}
+
+.about-section .btn-primary:hover {
+    background-color: #032c12;
+}
+
+
+.payment-section {
+    background: linear-gradient(to right, #25D366, #25D366);
+    /* gradient from Elementor */
+    color: white;
+    /* text color */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.payment-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.payment-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.payment-section .btn-primary {
+    background-color: #FF6464;
+    border: none;
+    font-weight: bold;
+}
+
+.payment-section .btn-primary:hover {
+    background-color: #e55656;
+}
+
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    /* bigger size */
+    height: 50px;
+    /* bigger size */
+    border-radius: 50%;
+    color: white;
+    font-size: 1.8rem;
+    /* bigger icon inside */
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 65px;
+    height: 65px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-float::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #25D366;
+    animation: pulse 0.9s infinite;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1.7;
+    }
+
+    70% {
+        transform: scale(0.6);
+        opacity: 2;
+    }
+
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+.sales-popup {
+    position: fixed;
+    bottom: 90px;
+    left: 20px;
+    background: #25D366;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 9999;
+    animation: slideIn 0.5s ease;
+}
+
+.popup-content {
+    font-size: 14px;
+    color: #333;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.feature-box{
+    height:320px;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* Overlay hidden initially */
+.feature-overlay{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    color:#fff;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    opacity:0;
+    transition:0.5s ease;
+}
+
+/* Fade in on hover */
+.feature-box:hover .feature-overlay{
+    opacity:1;
+}
+
+/* Slight zoom effect */
+.feature-box:hover{
+    transform:scale(1.05);
+    transition:0.5s;
+}

@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    background-color: #25D366;
+}
+
+.btn-danger {
+    background: #ff2f5b;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #25D366;
+}
+
+.big-bold-text {
+    font-size: 20px;
+    /* adjust size as you like */
+    font-weight: bold;
+}
+
+
+/* ===== SLIDER ===== */
+.hero-slider {
+  width: 100%;
+}
+
+.slider-img {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  animation: zoomEffect 20s infinite;
+}
+
+@keyframes zoomEffect {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+.hero-slider {
+  width: 100%;
+}
+
+.slider-img {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  animation: zoomEffect 20s infinite;
+}
+
+@keyframes zoomEffect {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+/* ===== TEXT OVERLAY ===== */
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 2;
+}
+
+.slider-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.slider-content p {
+  font-size: 20px;
+}
+
+.slider-btn {
+  background: #28a745;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* ===== WHATSAPP FLOAT BUTTON ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 65px;
+}
+
+/* ===== PURCHASE POPUP ===== */
+.purchase-popup {
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  display: none;
+  animation: slideIn 0.5s;
+  z-index: 999;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
