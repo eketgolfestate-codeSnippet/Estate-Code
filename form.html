@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eketgolf-Estate Sales Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo/Screenshot_2024-11-11_155359-removebg-preview.png"
+        type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white sticky-top w-100">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo/Screenshot_2024-11-11_155359-removebg-preview.png" height="50">
+            </a>
+
+            <!-- TOGGLE (Mobile) -->
+            <button class="navbar-toggler btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+
+            <!-- NAV CONTENT -->
+            <div class="collapse navbar-collapse" id="nav">
+
+                <!-- CENTER MENU -->
+                <ul class="navbar-nav mx-auto gap-4">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-danger big-bold-text" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-danger big-bold-text" href="./about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-danger big-bold-text" href="./feature.html">Features</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-danger big-bold-text" href="./gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-danger big-bold-text" href="./contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- RIGHT BUTTON -->
+                <a href="./form.html" class="btn btn-danger rounded-pill px-4 py-2 fw-bold">
+                    SALES FORM
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="card shadow-lg">
+            <div class="card-body p-5">
+
+                <!-- Header -->
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">SALES FORM</h2>
+                    <p class="text-muted" style="font-size: 20px; font-weight: 600; color: #25D366!important;">
+                        Eket Golf Estate - A Home in a Resort
+                    </p>
+                </div>
+
+                <form id="estateForm">
+
+                    <!-- CLIENT DETAILS -->
+                    <h5 class="mb-3">Particulars of Client(s)</h5>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Surname</label>
+                            <input type="text" id="surname" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Other Names</label>
+                            <input type="text" id="otherNames" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Title</label>
+                            <input type="text" id="title" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Position</label>
+                            <input type="text" id="position" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <!-- COMPANY INFO -->
+                    <h5 class="mt-4 mb-3">Company / Business Information</h5>
+
+                    <div class="mb-3">
+                        <label class="form-label">Name of Company/Firm</label>
+                        <input type="text" id="companyName" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Business Address</label>
+                        <textarea class="form-control" id="businessAddress" rows="2" required></textarea>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">P.O Box</label>
+                            <input type="text" id="poBox" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Post Office Box (if any)</label>
+                            <input type="text" id="postBox" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <!-- CONTACT DETAILS -->
+                    <h5 class="mt-4 mb-3">Contact Information</h5>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Telephone Number</label>
+                            <input type="text" id="telephone" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Mobile</label>
+                            <input type="text" id="mobile" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Business Email</label>
+                        <input type="email" id="businessEmail" class="form-control">
+                    </div>
+
+                    <!-- ADDRESS -->
+                    <h5 class="mt-4 mb-3">Residential Information</h5>
+
+                    <div class="mb-3">
+                        <label class="form-label">Residential Address</label>
+                        <textarea class="form-control" id="residentialAddress" rows="2" required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Address for Mailing (Optional)</label>
+                        <textarea class="form-control" id="mailingAddress" rows="2"></textarea>
+                    </div>
+
+                    <!-- PROPERTY DETAILS -->
+                    <h5 class="mt-4 mb-3">Property Details</h5>
+
+                    <div class="mb-3">
+                        <label class="form-label">Names to be used on Title Document(s)</label>
+                        <input type="text" id="titleNames" class="form-control">
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Property Designation</label>
+                            <input type="text" id="propertyDesignation" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Property Size</label>
+                            <input type="text" id="propertySize" class="form-control">
+                        </div>
+                    </div>
+
+                    <!-- OTHER DETAILS -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Date</label>
+                            <input type="date" id="date" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Client</label>
+                            <input type="text" id="client" class="form-control">
+                        </div>
+                    </div>
+
+                    <!-- SUBMIT -->
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-success px-5"
+                            style="padding: 20px; font-size: 20px; font-weight: 800; background-color: #25D366; border: none;">
+                            Submit Form
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            emailjs.init("JEgIBoza-OkfXrr1p"); // your public key
+
+            const form = document.getElementById("estateForm");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const data = {
+                    surname: document.getElementById("surname").value,
+                    otherNames: document.getElementById("otherNames").value,
+                    title: document.getElementById("title").value,
+                    position: document.getElementById("position").value,
+                    companyName: document.getElementById("companyName").value,
+                    businessAddress: document.getElementById("businessAddress").value,
+                    poBox: document.getElementById("poBox").value,
+                    postBox: document.getElementById("postBox").value,
+                    telephone: document.getElementById("telephone").value,
+                    mobile: document.getElementById("mobile").value,
+                    email: document.getElementById("email").value,
+                    businessEmail: document.getElementById("businessEmail").value,
+                    residentialAddress: document.getElementById("residentialAddress").value,
+                    mailingAddress: document.getElementById("mailingAddress") ? document.getElementById("mailingAddress").value : "",
+                    titleNames: document.getElementById("titleNames").value,
+                    propertyDesignation: document.getElementById("propertyDesignation").value,
+                    propertySize: document.getElementById("propertySize").value,
+                    date: document.getElementById("date").value,
+                    client: document.getElementById("client").value,
+                    from_name: "EKET GOLF ESTATE SALES FORM SUBMIT"
+                };
+
+                const serviceID = "service_3n14ch6";
+                const templateID = "template_mojmkzr";
+
+                Promise.all([
+                    emailjs.send(serviceID, templateID, { ...data, to_email: "idaram571@gmail.com" }),
+                ])
+                    .then(() => {
+                        alert("Form submitted successfully!");
+                        form.reset();
+                    })
+                    .catch(err => {
+                        console.error("EmailJS error:", err);
+                        alert("There was an error sending the form. Please try again.");
+                    });
+            });
+        });
+    </script>
+
+
+<footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row align-items-start">
+
+            <!-- Social Icons -->
+            <div class="col-md-3 mb-3">
+                <h5>Follow Us</h5>
+                <div class="d-flex gap-3 mt-2">
+                    <a href="http://facebook.com/profile.php?id=61569326181925" class="social-icon bg-primary">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@eketgolfestate" class="social-icon bg-danger">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="http://wa.link/wnjuhe" class="social-icon bg-success">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/eketgolfestate/profilecard/?igsh=eGtzMHFueGQyZm5l"
+                        class="social-icon bg-warning text-dark">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Office Address -->
+            <div class="col-md-3 mb-3">
+                <h5>MAIN OFFICE ADDRESS</h5>
+                <p class="mb-1">NO 42</p>
+                <p class="mb-1">Grace Bill Road</p>
+                <p class="mb-1">Eket, Akwa Ibom.</p>
+            </div>
+
+            <!-- USA Address -->
+            <div class="col-md-3 mb-3">
+                <h5>USA ADDRESS</h5>
+                <p class="mb-1">7star Home Inc</p>
+                <p class="mb-1">5600 Summer Cypress Dr.</p>
+                <p class="mb-1">Bakersfield, California USA.</p>
+            </div>
+
+            <!-- Head Office Address -->
+            <div class="col-md-3 mb-3">
+                <h5>HEAD OFFICE ADDRESS</h5>
+                <p class="mb-1">Suite F12</p>
+                <p class="mb-1">Vgc Mall</p>
+                <p class="mb-1">Lekki Lagos</p>
+            </div>
+
+        </div>
+
+        <hr class="bg-secondary">
+
+        <div class="text-center medium-bold-text">
+            Copyright &copy; 2026 Eket Golf Estate
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</body>
+
+</html>
