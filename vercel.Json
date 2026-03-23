@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/webmail",
+      "destination": "https://webmail.eketgolfestate.com",
+      "permanent": true
+    }
+  ]
+}
