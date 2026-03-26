@@ -40,3 +40,7 @@
 .btn-success:hover{
     background-color: black;
 }
+
+.form-check-label{
+    cursor: pointer;
+}
