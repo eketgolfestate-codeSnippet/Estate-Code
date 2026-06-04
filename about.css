@@ -42,7 +42,7 @@
     position: relative;
 }
 
-/* Dark overlay */
+
 .hero::before {
     content: "";
     position: absolute;
@@ -51,7 +51,7 @@
     background: rgba(0,0,0,0.5);
 }
 
-/* Center text */
+
 .hero-content {
     position: absolute;
     top: 50%;
